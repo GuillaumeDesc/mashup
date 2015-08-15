@@ -7,11 +7,11 @@ Accès à la partie admin (non mise en lien sur la partie publique pour plus de 
 Sites/documents utilisés : 
 
 -ClassUpload : http://www.verot.net/php_class_upload.html
--la documentation php
--les infos complémentaires sur l'IP : ipinfo.io
--la galerie justifiée : http://miromannino.github.io/Justified-Gallery/
--les nombreuses questions des autres qui ont trouvé réponse sur : http://stackoverflow.com/
--Le code de détection de l'adresse IP http://roshanbh.com.np/2007/12/getting-real-ip-address-in-php.html
+-La documentation php
+-Les infos complémentaires sur l'IP : ipinfo.io
+-La galerie justifiée : http://miromannino.github.io/Justified-Gallery/
+-Les nombreuses questions des autres qui ont trouvé réponse sur : http://stackoverflow.com/
+-Détection de l'adresse IP http://roshanbh.com.np/2007/12/getting-real-ip-address-in-php.html
 -Google Font pour les typos
 -Convertisseur ttf-> gdf : http://webcodingeasy.com/PHP/TTF-to-GD
 -Le cours de PHP.
