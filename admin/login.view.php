@@ -35,7 +35,7 @@
 					</li>
 					<li>
 						<label for='password'>Pass*</label>
-						<input type="password" name="password" id='password' placeholder="Pass" requiered="requiered">
+						<input type="password" name="password" id='password' placeholder="Mot de passe" requiered="requiered">
 						<?php echo message_erreur($errors,'password'); ?>
 					</li>
 					<li>
