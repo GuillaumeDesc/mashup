@@ -3,12 +3,12 @@
 if(!defined('ADMIN')) {
 		die('accès interdit');
 	}
-//PATTE BLANCHE: config
+//Mashup config.
 
 //Afficher les erreurs lors du DEV
 error_reporting(E_ERROR | E_WARNING);
 
-// Les utilisateurs
+// Users et mots de passe correspondants
 $user = array();
 	$users[] = array(
 		"fullname" => "Guillaume",

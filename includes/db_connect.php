@@ -1,5 +1,7 @@
 <?php
             
+        //Connexion a la base de donnée avec PDO
+            
         try {
             $req = new PDO('mysql:host=localhost;dbname=mashup', 'root', 'root');
         }
