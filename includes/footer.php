@@ -1,0 +1,1 @@
+<footer>© <a href="http://guillaumedeschryver.be" target="_blank" >  Guillaume Deschryver</a>, <?php echo date('Y');?></footer>

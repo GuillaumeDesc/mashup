@@ -1,0 +1,561 @@
+			html, body {
+				font-family: sans-serif;
+				background:#fff;
+			}
+
+            header {
+				top: 0;
+				width: 33.3333%;
+				min-height: 100%;
+				display: table;
+				position: fixed;
+				left: 0;
+                background: #fff;
+			}
+    
+                .mobile {display: none;}
+
+                #connect { 
+                    position: relative;
+                    margin: auto;
+                }
+
+                #title {
+                    position: relative;;
+                    display: table-cell;
+                    vertical-align: middle;
+                    width: 100%;
+                    margin: 0 auto;
+                    text-align: center;
+                }
+
+                    #title a {text-decoration: none;}
+
+                    #title p a, #gestionList .ip a {
+                        padding: 2px;
+                        border-bottom: 2px solid rgb(0, 230, 255);
+                        -webkit-transition-duration: .25s;
+                        -moz-transition-duration: .25s;
+                        -o-transition-duration: .25s;
+                        -ms-transition-duration: .25s;
+                        transition-duration: .25s;
+                    }
+
+                    #explanation {
+                        height: 100vh;
+                        top: 0;
+                        background: #fff;
+                    }
+
+                        section {
+                            position: relative;
+                            display: block;
+                            vertical-align: middle;
+                            margin: 30px auto;
+                        }
+
+            svg { margin-bottom: -2px;}
+
+            svg .Rouge, svg .Bleu { 
+                -webkit-transition-duration: .25s;
+                -moz-transition-duration: .25s;
+                -o-transition-duration: .25s;
+                -ms-transition-duration: .25s;
+                transition-duration: .25s;
+            }
+            svg .Rouge {
+                -webkit-transform: translateX(40px);
+                -moz-transform: translateX(40px);
+                -o-transform: translateX(40px);
+                -ms-transform: translateX(40px);
+                transform: translateX(40px);
+            }
+            svg .Bleu {
+                -webkit-transform: translateX(-40px);
+                -moz-transform: translateX(-40px);
+                -o-transform: translateX(-40px);
+                -ms-transform: translateX(-40px);
+                transform: translateX(-40px);
+            }
+
+            svg:hover .Rouge {
+                -webkit-transform: translateX(51px);
+                -moz-transform: translateX(51px);
+                -o-transform: translateX(51px);
+                -ms-transform: translateX(51px);
+                transform: translateX(51px);
+            }
+            svg:hover .Bleu {
+                -webkit-transform: translateX(-51px);
+                -moz-transform: translateX(-51px);
+                -o-transform: translateX(-51px);
+                -ms-transform: translateX(-51px);
+                transform: translateX(-51px);
+            }
+
+            h1 {
+                font-family: 'Roboto Slab', sans-serif;
+                font-size: 50px;
+                font-weight: 100;
+                text-decoration: none;
+                color: black;
+                text-align: center;
+                width: 50%;
+                margin-left: 25%;
+                font-weight: 10;
+            }
+
+            hr {
+                margin: 0 50px;
+                height: 2px;
+                background: black;
+                z-index: 999;
+                position: relative;
+                border: none;
+            }
+
+			p, #gestionList form input {
+				font-family: 'Roboto Slab', serif;
+				font-size: 16px;
+				line-height: 1.4;
+				text-align: left;
+				margin: 15px 50px;
+				font-weight: 100;
+			}
+
+                #right { text-align: right;}
+
+                    #right a {color: black;}
+
+            #zoom {
+                position: fixed;
+                z-index: 9999999999;
+                top: 0px;
+                text-align: center;
+                width: 50px;
+                height: 100%;
+                right: 0;
+                padding: 7px 0;
+                background: #fff;
+            }
+
+                #zoom #less, #zoom #plus{
+                    position: relative;
+                    -webkit-transition-duration: .25s;
+                    -moz-transition-duration: .25s;
+                    -o-transition-duration: .25s;
+                    -ms-transition-duration: .25s;
+                    transition-duration: .25s;
+                    width: 87px;
+                    text-align: center;
+                    padding: 7px;
+                    padding-bottom: 2px;
+                    margin: 0;
+                    display: inline-block;
+                    cursor: pointer;
+                    border-bottom: 1px solid black;
+                    -webkit-transform-origin: bottom left;
+                       -moz-transform-origin: bottom left;
+                        -ms-transform-origin: bottom left;
+                         -o-transform-origin: bottom left;
+                            transform-origin: bottom left;
+                    -webkit-transform: rotate(90deg);
+                       -moz-transform: rotate(90deg);
+                        -ms-transform: rotate(90deg);
+                         -o-transform: rotate(90deg);
+                            transform: rotate(90deg);
+                }
+
+                    #zoom #less {margin-top: 90px;}
+
+                    #zoom #less:hover, #zoom #plus:hover,#title p a:hover, #gestionList .ip a:hover {
+                        border-bottom: 2px solid rgb(240, 70, 155);
+                    }
+
+			#galery, #gestionList{
+				background: #FFF;
+                margin: 0 auto;
+                position: relative;
+                display: inline-block;
+                min-height: 100vh;
+                margin-bottom: 50px;
+                padding: 0 0;
+                width: 66.7%;
+                float: right;
+			}
+
+                #galery { 
+                    width: calc(66.7% - 50px);
+                    margin-right: 50px;
+                }
+
+				#galery a, #galery a img, #gestionList .preview {
+					list-style: none;
+					display: inline-block;
+					width: 33%;
+                    -webkit-transition: 0.2s linear;
+			         -moz-transition: 0.2s linear;
+			         -o-transition: 0.2s linear;
+		          	-ms-transition: 0.2s linear;
+		          	transition: 0.2s linear;
+			         -webkit-filter: grayscale(50%) hue-rotate(10deg);
+		          	-moz-filter: grayscale(50%) hue-rotate(10deg);
+		          	-o-filter: grayscale(50%) hue-rotate(10deg);
+		          	-ms-filter: grayscale(50%) hue-rotate(10deg);
+		          	filter: grayscale(50%) hue-rotate(10deg);
+                    z-index: 99;
+				}
+
+                    #galery a, #deconnect, #gestionList form input{
+                        -webkit-transition-duration: .25s;
+                        -moz-transition-duration: .25s;
+                        -o-transition-duration: .25s;
+                        -ms-transition-duration: .25s;
+                        transition-duration: .25s;
+                        background: #fff;
+                        box-shadow: 0px 0px 0px rgb(240, 70, 155), 0px 0px 0px rgb(0, 230, 255);
+                    }
+                        #gestionList form input:hover{
+                            box-shadow: 7px -7px 0px rgb(240, 70, 155), -7px 7px 0px rgb(0, 230, 255);
+                            background: black;
+                            color: #fff;
+                        }
+
+                            #title #deconnect a { 
+                                border: none;
+                                color: black;
+                            }
+                                #title #deconnect a:hover {
+                                    color: #fff;
+                                }
+
+
+                     #submit:after  { 
+                        content: "";
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        background: rgb(0, 230, 255);
+                        z-index: 0;
+                        top: 0px;
+                        left: 0px;
+                        -webkit-transition-duration: .25s;
+                        -moz-transition-duration: .25s;
+                        -o-transition-duration: .25s;
+                        -ms-transition-duration: .25s;
+                        transition-duration: .25s;
+                    }
+
+                    #submit:before { 
+                        content: "";
+                        top: 0px;
+                        left: 0px;
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        background: rgb(240, 70, 155);
+                        -webkit-transition-duration: .25s;
+                        -moz-transition-duration: .25s;
+                        -o-transition-duration: .25s;
+                        -ms-transition-duration: .25s;
+                        transition-duration: .25s;
+                    }
+
+                    #galery a:hover, #galery a img:hover, #deconnect:hover, #gestionList .preview:hover {
+                        -webkit-filter: grayscale(0%) hue-rotate(0deg);
+		          	    -moz-filter: grayscale(0%) hue-rotate(0deg);
+		          	    -o-filter: grayscale(0%) hue-rotate(0deg);
+		          	    -ms-filter: grayscale(0%) hue-rotate(0deg);
+		          	    filter: grayscale(0%) hue-rotate(0deg);
+                        box-shadow: 7px -7px 0px rgb(240, 70, 155), -7px 7px 0px rgb(0, 230, 255);
+                        }
+
+                    #submit:hover:after, #gestionList form:hover:after{left: -6px; top: 6px;}
+                    #submit:hover:before, #gestionList form:hover:before{left: 6px; top: -6px;}
+
+
+                #deconnect {
+                    float: none;
+                    text-align: center;
+                    margin: 21px auto;
+                    width: auto;
+                    display: inline-block;
+                    padding: 7px;
+                    border: solid 2px black;
+                }
+
+                    #deconnect:hover {
+                        background: black;
+                    }
+                        #deconnect:hover a{
+                            color: #fff;
+                        }
+
+                #gestionList {
+                    display: table;
+                    position: relative;
+                    margin-top: 50px;
+                    text-align: center;
+                }
+
+                #gestionList li{
+                    border: 2px solid black;
+                    width: 340px;
+                    display: inline-block;
+                    margin: 14px 30px;
+                    background: #fff;
+                    position: relative;
+                    text-align: center;
+                }
+
+                    #alert {
+                        z-index: 99999999999;
+                        position: fixed;
+                        margin: 0 auto;
+                        padding: 0;
+                        text-align: center;
+                        margin: 0 auto;
+                        margin-top: 50px;
+                        left: calc( 66.7% - 150px );
+                        width: 300px;
+                        -webkit-animation: alert .5s linear 4s 1 forwards;
+                        -moz-animation: alert .5s linear 4s 1 forwards;
+                        -o-animation: alert .5s linear 4s 1 forwards;
+                        -ms-animation: alert .5s linear 4s 1 forwards;
+                        animation: alert .5s linear 4s 1 forwards;
+                    }
+
+                        #alert p {
+                            width: 300px;
+                            text-align: center;
+                            position: relative;
+                            background: #fff;
+                            border: 2px solid black;
+                            z-index: 99999;
+                            padding: 14px 21px;
+                            margin: 0 auto;
+                            width: auto;
+                            box-shadow: 7px -7px 0px rgb(240, 70, 155), -7px 7px 0px rgb(0, 230, 255);
+                            -webkit-animation: alertp .25s linear 3.75s 1 forwards;
+                            -moz-animation: alertp .25s linear 3.75s 1 forwards;
+                            -o-animation: alertp .25s linear 3.75s 1 forwards;
+                            -ms-animation: alertp .25s linear 3.75s 1 forwards;
+                            animation: alertp .25s linear 3.75s 1 forwards;
+                        }
+
+                    fieldset { margin-top: 30px;}
+
+                        fieldset ol {list-style: none;}
+
+                    #gestionList .preview  {
+                        width: 100%;
+                        height: 200px;
+                        background-size: cover;
+                        position: relative;
+                        background-position: center;
+                        display: inline-block;
+                        float: left;
+                    }
+
+                    #gestionList form {
+                        display: inline;
+                         width: 100%;
+                         float: right;
+                        border: none;
+                        height: 50px;
+                        margin: 0;
+                    }
+
+                    #gestionList form input, #gestionList .ip {
+                       display: inline;
+                        width: 100%;
+                        float: right;
+                        border: none;
+                        height: 50px;
+                        margin: 0;
+                        background: #fff;
+                    }
+
+                        #gestionList .ip a { 
+                            text-decoration: none;
+                            color: black;
+                        }
+
+                        #gestionList form input {
+                            border-top: solid 2px black;
+                            text-align: center;
+                            cursor: pointer;
+                        }
+
+                    #gestionList #noResult {
+                        border: none;
+                        display: table-cell;
+                        vertical-align: middle;
+                        text-align: center;
+                        width: 100%;
+                    }
+
+                        #gestionList #noResult p {
+                            text-align: center;
+                        }
+
+
+                        #gestionList .ip {
+                            width: 100%;
+                            margin: 14px 0;
+                            text-align: center;
+                            height: 58px;
+                            line-height: 2;
+                        }
+
+					input {
+						width: 250px;
+						padding: 15px 21px;
+						border: 2px solid black;
+						margin: 0 auto;
+						margin-top: 20px;
+						position: relative;
+                        -webkit-transition-duration: .25s;
+                        -moz-transition-duration: .25s;
+                        -o-transition-duration: .25s;
+                        -ms-transition-duration: .25s;
+                        transition-duration: .25s;
+					}
+
+                        input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+                            background-color: #fff;
+                            background-image: none;
+                            color: rgb(0, 0, 0);
+                        }
+
+                    input:hover { 
+                        border: 2px solid rgb(240, 70, 155);
+                        outline: -webkit-focus-ring-color auto 0px;
+                    }
+
+                    input:focus { 
+                        border: 2px solid #00E6FF;
+                        outline: -webkit-focus-ring-color auto 0px;
+                    }
+
+						label {font-family: serif; display: none; visibility: hidden;}
+
+                    #submit {
+                        width: 87px;
+                        height: 40px;
+                        background: #fff;
+                        position: relative;
+                        display: inline-block;
+                        margin: 21px 14px;
+                    }
+
+						#submit input {
+                            font-family: 'Roboto Slab', serif;
+				            font-size: 16px;
+							width: auto;
+							border-radius: 0;
+							font-size: 16px;
+							padding: 7px;
+							cursor: pointer;
+                            margin: 0;
+                            background: #fff;
+                            z-index: 999;
+                            width: 87px;
+                            height: 40px;
+                            text-align: center;
+						}
+
+                            #submit input:hover{
+                                background: black;
+                                color: #fff;
+                                border-color: black;
+                            }
+
+
+                            footer {
+                                position: fixed;
+                                bottom: 0;
+                                text-align: center;
+                                width: 33.3%;
+                                font-family: 'Roboto Slab', serif;
+                                font-size: 12px;
+                                margin: 15px;
+                                color: black;
+                            }
+
+                                footer a { color: black;}
+
+				@media screen and (max-width: 950px) {
+                    
+                    header { 
+                        position: relative;
+                        width: 350px;
+                        margin: 21px auto;
+                        height: auto;
+                        min-height: 100%;
+                    }
+                    
+                    .mobile {display: block;}
+                    
+                    #galery, #gestionList { 
+                        width: 100%;
+                        float: none;
+                        margin: auto;
+                        margin-bottom: 30px;
+                        min-height: 0px;
+                    }
+                    
+                    #zoom {
+                        display: none;
+                    }
+                    
+                    #gestionList li {
+                        width: 80%;
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+                    
+                    #alert {
+                        bottom: 28px;
+                        width: 80%;
+                        left: 10%;
+                        
+                    }
+                    
+                    footer {
+                        position: relative;
+                        width: auto;
+                        z-index: 999999999;
+                        
+                    }
+				}
+
+                @media screen and (max-width: 600px) {
+					ul {display: none; visibility: hidden;}
+					span{width: 100%;}
+				}
+
+                @media screen and (max-width: 350px) {
+                    header {width: 320px;}
+				}
+
+                
+@-webkit-keyframes alert{
+	0% {
+        opacity: 1;
+        display: block;
+        visibility: visible;}
+    99% {
+        opacity: 0;
+        display: block;
+        visibility: visible;
+    }
+    100% {
+        display: none;
+        visibility: hidden;
+    }
+}                
+@-webkit-keyframes alertp{
+	0% { box-shadow: 7px -7px 0px rgb(240, 70, 155), -7px 7px 0px rgb(0, 230, 255);}
+    100% { box-shadow: 0px 0px 0px rgb(240, 70, 155), 0px 0px 0px rgb(0, 230, 255);}
+}
