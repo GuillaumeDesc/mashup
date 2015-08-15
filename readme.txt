@@ -1,9 +1,10 @@
 # mashup
-Projet pour le cours de PHP, seconde session année 2014-2015.
+
+Projet pour les cours de PHP, seconde session, année 2014-2015.
 
 Accès à la partie admin (non mise en lien sur la partie publique pour plus de sécurité) -> /admin
 
-Sites/documens utilisés : 
+Sites/documents utilisés : 
 
 -ClassUpload : http://www.verot.net/php_class_upload.html
 -la documentation php
